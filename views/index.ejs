@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Strona trzeźwości twojego starego</title>
+
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: "Arial", sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        hr {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stan trzeźwości twojego starego</h1>
+    <hr>
+
+    <% switch (number) {
+
+    case 0: { %>
+        <p>Twój stary jest trzeźwy.</p>
+
+        <img src="https://samequizy.pl/wp-content/uploads/2019/11/filing_images_ce4592f01d9c.jpg" height="300px" alt="Stary jest trzeźwy.">
+    <% break }
+
+    case 1: { %>
+        <p>Twój stary ma obecnie 1 promil we krwi.</p>
+
+        <img src="https://icdn.2cda.pl/vid/thumbs/898da14f57f73ffbe0371fa5f78df9b922a92babab3462375a041a48017c7060-71.jpg_ooooxooxox_1280x720.jpg" height="300px" alt="Stary ma 1 promil alkoholu we krwi.">
+    <% break }
+
+    default: {  %>
+        <p>Twój stary ma <%= number %> promile we krwi i jest w chuj najebany.</p>
+
+        <img src="https://www.wykop.pl/cdn/c3201142/comment_PfQOC8SXKdrLAQVo2ov83zVkWHmdeAnM.jpg" height="300px" alt="Twój star jest w chuj najebany.">
+    <% break }
+
+    } %>
+
+    <p style="text-align: center;">
+        <a href="/">Odśwież ten pierdalnik</a>
+    </p>
+</body>
+</html>

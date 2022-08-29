@@ -1,0 +1,17 @@
+{
+  "name": "stan-trzezwosci",
+  "version": "1.0.0",
+  "description": "Stan trzeźwości twojego starego.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sefinek",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "helmet": "^6.0.0"
+  }
+}
