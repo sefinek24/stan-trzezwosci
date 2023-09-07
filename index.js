@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 const express = require('express');
 const { hidePoweredBy } = require('helmet');
 const app = express();
@@ -13,5 +14,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(process.env.PORT, () => {
-	console.log(`App is ready, http://127.0.0.1:${process.env.PORT}`);
+	console.log(`App is ready: http://127.0.0.1:${process.env.PORT}`);
 });
